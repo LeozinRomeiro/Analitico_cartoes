@@ -10,6 +10,12 @@ namespace Analitico
     {
         static void Main(string[] args)
         {
+            cartao itau = new cartao();
+
+            itau.nome = "leonardo ferreira";
+
+            Console.WriteLine(itau.nome);
+            Console.ReadLine();
         }
     }
 }
