@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Analitico", "Analitico\Analitico.csproj", "{E4119657-8FC6-4948-AD58-C24C2974C1AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4119657-8FC6-4948-AD58-C24C2974C1AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4119657-8FC6-4948-AD58-C24C2974C1AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4119657-8FC6-4948-AD58-C24C2974C1AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4119657-8FC6-4948-AD58-C24C2974C1AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D5611A83-E109-4B3F-AE12-46479403A569}
+	EndGlobalSection
+EndGlobal
