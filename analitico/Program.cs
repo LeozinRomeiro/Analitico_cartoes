@@ -14,7 +14,9 @@ namespace Analitico
 
             itau.nome = "leonardo ferreira";
 
-            Console.WriteLine(itau.nome);
+            itau.Creditar(700);
+
+            Console.WriteLine(itau.limite);
             Console.ReadLine();
         }
     }
