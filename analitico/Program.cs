@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Analitico
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
@@ -22,6 +22,7 @@ namespace Analitico
 
             Console.WriteLine(itau.limite);
             Console.ReadLine();
+            
         }
     }
 }

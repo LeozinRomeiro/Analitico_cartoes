@@ -1,33 +1,39 @@
-﻿using System.Runtime.CompilerServices;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Teste;
 
-public class cartao
+namespace Analitico
 {
-    public int numero;
-    public int cvc;
-    public string nome;
-    public double limite=1000;
-
-    public bool Creditar(double valor)
+    public class cartao
     {
-        if (this.limite < valor)
-            return false;
-        else
+        public Teste.Conta conta;
+        public int numero;
+        public int cvc;
+        public string nome;
+        public double limite=1000;
+
+        public bool Creditar(double valor)
+        {
+            if (this.limite < valor)
+                return false;
             this.limite -= valor; return true;
-    }
+        }
 
-    public bool Aumentar(double valor)
-    {
-        if (valor < 0)
-            return false;
-        else
+        public bool Aumentar(double valor)
+        {
+            if (valor < 0)
+                return false;
             this.limite += valor; return true;
-    }
+        }
 
-    public bool Diminuir(double valor)
-    {
-        if(valor<this.limite)
-            return false;
-        else
+        public bool Diminuir(double valor)
+        {
+            if(valor<this.limite)
+                return false;
             this.limite -= valor; return true;
+        }
     }
 }
