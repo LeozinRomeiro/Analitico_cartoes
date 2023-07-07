@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Analitico
 {
-    internal class conta
+    public class Conta
     {
+        public int agencia;
     }
 }
