@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-public namespace Teste
+namespace Analitico
 {
     public class Conta
     {   
