@@ -10,7 +10,7 @@ namespace Analitico
     {
         static void Main(string[] args)
         {
-            cartao itau = new cartao();
+            Cartao itau = new Cartao();
 
             itau.nome = "leonardo ferreira";
 

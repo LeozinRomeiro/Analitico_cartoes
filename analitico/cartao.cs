@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Analitico
 {
-    public class cartao
+    public class Cartao
     {
-        public Teste.Conta conta;
+        public Conta atribuicao;
         public int numero;
         public int cvc;
         public string nome;
