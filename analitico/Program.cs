@@ -17,6 +17,10 @@ namespace Analitico
             itau.Creditar(700);
 
             Console.WriteLine(itau.limite);
+
+            itau.Aumentar(1000);
+
+            Console.WriteLine(itau.limite);
             Console.ReadLine();
         }
     }

@@ -14,4 +14,20 @@ public class cartao
         else
             this.limite -= valor; return true;
     }
+
+    public bool Aumentar(double valor)
+    {
+        if (valor < 0)
+            return false;
+        else
+            this.limite += valor; return true;
+    }
+
+    public bool Diminuir(double valor)
+    {
+        if(valor<this.limite)
+            return false;
+        else
+            this.limite -= valor; return true;
+    }
 }
