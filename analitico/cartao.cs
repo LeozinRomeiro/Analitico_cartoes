@@ -8,7 +8,7 @@ namespace Analitico
 {
     public class Cartao
     {
-        public Conta atribuicao;
+        public Conta banco;
         public int numero;
         public int cvc;
         public string nome;
