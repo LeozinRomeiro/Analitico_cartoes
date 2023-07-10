@@ -10,10 +10,11 @@ namespace Analitico
     {
         static void Main(string[] args)
         {
-            Conta conta = new Conta();
+            Conta devedora = new Conta();
             Cartao atual = new Cartao();
 
             atual.nome = "leonardo ferreira";
+            devedora.banco = "itau";
 
             
 

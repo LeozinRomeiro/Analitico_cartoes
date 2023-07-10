@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Analitico
 {
-    internal class Conta
+    public class Conta
     {
-        public int numero;
-        public int validade;
-        public int cvc;
+        public string banco;
+        public int agencia;
+        public int cidade;
+        public int estado;
     }
 }
