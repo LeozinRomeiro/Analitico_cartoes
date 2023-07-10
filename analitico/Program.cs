@@ -10,20 +10,20 @@ namespace Analitico
     {
         static void Main(string[] args)
         {
+            Conta conta = new Conta();
+            Cartao atual = new Cartao();
 
-            Cartao itau = new Cartao();
-
-            itau.nome = "leonardo ferreira";
+            atual.nome = "leonardo ferreira";
 
             
 
-            itau.Creditar(700);
+            atual.Creditar(700);
 
-            Console.WriteLine(itau.limite);
+            Console.WriteLine(atual.limite);
 
-            itau.Aumentar(1000);
+            atual.Aumentar(1000);
 
-            Console.WriteLine(itau.limite);
+            Console.WriteLine(atual.limite);
             Console.ReadLine();
             
         }
