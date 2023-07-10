@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Analitico
 {
-    internal class conta
+    internal class Conta
     {
+        public int numero;
+        public int validade;
+        public int cvc;
     }
 }
