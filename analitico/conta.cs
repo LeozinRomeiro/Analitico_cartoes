@@ -9,8 +9,5 @@ namespace Analitico
     public class Conta
     {
         public string banco;
-        public int agencia;
-        public int cidade;
-        public int estado;
     }
 }

@@ -16,15 +16,6 @@ namespace Analitico
             atual.nome = "leonardo ferreira";
             devedora.banco = "itau";
 
-            
-
-            atual.Creditar(700);
-
-            Console.WriteLine(atual.limite);
-
-            atual.Aumentar(1000);
-
-            Console.WriteLine(atual.limite);
             Console.ReadLine();
             
         }

@@ -10,29 +10,56 @@ namespace Analitico
     {
         public Conta banco;
         public int numero;
-        public int cvc;
         public string nome;
-        public double limite=1000;
+        private double _limite=1000;
+
+        public double Limite    
+        {
+            get
+            {
+                return _limite;
+            }
+            set
+            {
+                if (value <0)
+                {
+                    return;
+                }
+                _limite = value;
+            }
+        }
+
+        public double Captar_limite()
+        {
+            return _limite;
+        }
+
+        public void Definir_limite(double limite)
+        {
+            if( limite < 0 )
+                return;
+            this._limite = limite;
+        }
 
         public bool Creditar(double valor)
         {
-            if (this.limite < valor)
+            if (_limite < valor)
                 return false;
-            this.limite -= valor; return true;
+            _limite -= valor; return true;
         }
 
         public bool Aumentar(double valor)
         {
             if (valor < 0)
                 return false;
-            this.limite += valor; return true;
+            _limite += valor; return true;
         }
 
         public bool Diminuir(double valor)
         {
-            if(valor<this.limite)
+            if(valor<_limite)
                 return false;
-            this.limite -= valor; return true;
+            _limite -= valor; return true;
         }
     }
 }
