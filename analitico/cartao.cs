@@ -8,12 +8,13 @@ namespace Analitico
 {
     public class Cartao
     {
-        public Conta banco;
-        public int numero;
-        public string nome;
-        private double _limite=1000;
+        public Conta Banco { get; set; }//Forma simplificada de criar um get e set
+        public int Numero { get; set; }
+        public string Nome { get; set; }
 
-        public double Limite    
+        private double _limite = 1000; //Indicando seu formato private para colocar condições no get e no set
+
+        public double Limite
         {
             get
             {
@@ -21,7 +22,7 @@ namespace Analitico
             }
             set
             {
-                if (value <0)
+                if (value < 0)
                 {
                     return;
                 }
@@ -29,21 +30,23 @@ namespace Analitico
             }
         }
 
+
+
         public double Captar_limite()
         {
-            return _limite;
+            return _limite;//Get da forma mais bruta
         }
 
         public void Definir_limite(double limite)
         {
-            if( limite < 0 )
+            if (limite < 0)//Set da forma bruta
                 return;
             this._limite = limite;
         }
 
         public bool Creditar(double valor)
         {
-            if (_limite < valor)
+            if (_limite < valor)//Funcao para credirar os cartões
                 return false;
             _limite -= valor; return true;
         }
@@ -57,7 +60,7 @@ namespace Analitico
 
         public bool Diminuir(double valor)
         {
-            if(valor<_limite)
+            if (valor < _limite)
                 return false;
             _limite -= valor; return true;
         }

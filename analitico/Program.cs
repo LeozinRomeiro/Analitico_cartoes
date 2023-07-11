@@ -10,11 +10,14 @@ namespace Analitico
     {
         static void Main(string[] args)
         {
-            Conta devedora = new Conta();
+            Conta devedora = new Conta(889,153212,"BB");
             Cartao atual = new Cartao();
 
-            atual.nome = "leonardo ferreira";
-            devedora.banco = "itau";
+            atual.Nome = "leonardo ferreira";
+            devedora.Banco = "itau";
+
+
+            Console.WriteLine(Conta.Total);
 
             Console.ReadLine();
             
