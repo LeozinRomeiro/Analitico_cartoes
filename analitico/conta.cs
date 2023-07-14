@@ -11,7 +11,7 @@ namespace Analitico
         public string Banco { get; set; }
         public int Agencia { get; set; }
         public int Numero { get; set; }
-        public static int Total { get; private set; }
+        public static int Total { get; private set; } //static implica que essa variavel se referencia a toda e classe e não apenas para um simples objeto
 
         public Conta(int agencia, int numero, string banco) 
         {

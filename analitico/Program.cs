@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Analitico.Usuarios;
+using Analitico.Pagamento_virtual;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,14 +12,20 @@ namespace Analitico
     {
         static void Main(string[] args)
         {
-            Conta devedora = new Conta(889,153212,"BB");
-            Cartao atual = new Cartao();
+            Usuario Leonardo = new Usuario(0);
 
-            atual.Nome = "leonardo ferreira";
-            devedora.Banco = "itau";
+            Leonardo.CPF = "143.526.119-48";
+            Leonardo.Nome = "Leonardo Henrique";
+
+            Cartao azul = new Cartao(1559);
 
 
-            Console.WriteLine(Conta.Total);
+            Console.WriteLine(azul.Numero);
+
+
+            azul = new Debito(azul.Numero);
+
+            Console.WriteLine(azul.Numero);
 
             Console.ReadLine();
             
