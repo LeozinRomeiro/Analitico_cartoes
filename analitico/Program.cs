@@ -20,12 +20,12 @@ namespace Analitico
             Cartao azul = new Cartao(1559);
 
 
-            Console.WriteLine(azul.Numero);
+            Console.WriteLine(azul.Numero_cartao);
 
 
-            azul = new Debito(azul.Numero);
+            azul = new Debito(azul.Numero_cartao);
 
-            Console.WriteLine(azul.Numero);
+            Console.WriteLine(azul.Numero_cartao);
 
             Console.ReadLine();
             
