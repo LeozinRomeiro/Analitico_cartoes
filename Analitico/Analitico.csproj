@@ -51,9 +51,11 @@
     <Compile Include="Pagamento_virtual\Credito.cs" />
     <Compile Include="Pagamento_virtual\Debito.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Sistema\Autenticador.cs" />
+    <Compile Include="Sistema\Acesso.cs" />
     <Compile Include="Sistema\Internal.cs" />
     <Compile Include="Usuarios\Usuario.cs" />
+    <Compile Include="Usuarios\Usuario_acesso.cs" />
+    <Compile Include="Usuarios\Usuario_master.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

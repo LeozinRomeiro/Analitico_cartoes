@@ -16,7 +16,7 @@ namespace Analitico.Pagamento_virtual
         {
             Numero_cartao=numero;
         }
-        public abstract bool Agregar(double valor);//Virtual possibilita a sobreescreve-lo em uma herança
-        public abstract bool Reduzir(double valor);//Marca essa instanci/metodo como abstract obria a sobreescreva-la em filho
+        public abstract bool Agregar(double valor);//Virtual POSSIBILITA a sobreescreve-lo em uma herança
+        public abstract bool Reduzir(double valor);//Marca essa instanci/metodo como abstract OBRIGA a sobreescreva-la em filho
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Analitico.Sistema;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,10 +7,11 @@ using System.Threading.Tasks;
 
 namespace Analitico.Usuarios
 {
-    public class Usuario 
+    public class Usuario
     {
         public string Nome { get; set; }
         public string CPF { get; set; }
+
         /*// 0 - Eu
         // 1 - Familia
         // 2 - Amigos

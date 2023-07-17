@@ -8,11 +8,12 @@ using System.Threading.Tasks;
 
 namespace Analitico.Sistema
 {
-    public class Internals
+    public class Internal
     {
-        public bool Logar(Usuario usuario, string senha)
+        public bool Logar(Acesso usuario, string senha)
         {
-            bool resposta = false;
+            bool resposta = usuario.Validar(senha);//Essa funcao so pode ser chamada porque é requisitada no "Logar"
+
             if (resposta)
             {
                 Console.WriteLine("Certo");
