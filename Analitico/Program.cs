@@ -12,15 +12,22 @@ namespace Analitico
     {
         static void Main(string[] args)
         {
-            Usuario Leonardo = new Usuario(0);
+            Cadastrar();
+
+            Console.ReadLine();
+
+        }
+        public static void Cadastrar()
+        {
+            Usuario Leonardo = new Usuario();
 
             Leonardo.CPF = "143.526.119-48";
             Leonardo.Nome = "Leonardo Henrique";
 
+            DateTime variavel = new DateTime(2011, 7, 10);
+            Console.WriteLine("Today is " + variavel.ToString("MM/yy") + ".");
 
-
-            Console.ReadLine();
-
+            Credito roxo = new Credito(9395, variavel, 213, 2568, "NuBank");
         }
     }
 }

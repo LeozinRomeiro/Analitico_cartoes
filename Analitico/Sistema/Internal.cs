@@ -1,0 +1,25 @@
+﻿using Analitico.Usuarios;
+using Analitico.Sistema;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Analitico.Sistema
+{
+    public class Internal
+    {
+        
+        public bool Logar(Usuario usuario, string senha)
+        {
+            
+
+            if (resposta)
+            {
+                Console.WriteLine("Certo");
+            }
+            Console.WriteLine("Erro");return false;
+        }
+    }
+}
