@@ -13,7 +13,11 @@ namespace Analitico.Sistema
 
         public bool Autenticar(string senha)
         {
-            return Senha == senha;
+            if (senha == "21432")
+            {
+                return true;
+            }
+            return false;
         }
 
         public bool Agregar(double valor)
@@ -21,6 +25,18 @@ namespace Analitico.Sistema
             if (valor < 0)
                 return false;
             this.Senha += valor; return true;
+        }
+    }
+    public class Internal
+    {
+        public bool Logar(Usuario usuario, string senha)
+        {
+            bool resposta = false;
+            if (resposta)
+            {
+                Console.WriteLine("Certo");
+            }
+            Console.WriteLine("Erro"); return false;
         }
     }
 }

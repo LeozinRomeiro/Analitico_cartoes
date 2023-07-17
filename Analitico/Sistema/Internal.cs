@@ -8,11 +8,10 @@ using System.Threading.Tasks;
 
 namespace Analitico.Sistema
 {
-    public class Internal
+    public class Internals
     {
         public bool Logar(Usuario usuario, string senha)
         {
-            
             bool resposta = false;
             if (resposta)
             {
