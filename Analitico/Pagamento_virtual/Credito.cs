@@ -8,10 +8,10 @@ namespace Analitico.Pagamento_virtual
 {
     internal class Credito : Cartao //Herança mostrando que o "credito" é um cartao e herdando as variaveis dele
     {
-        private double Limite = 1000; //Indicando seu formato private para colocar condições no get e no set
+         //Indicando seu formato private para colocar condições no get e no set
         public DateTime Vencimento { get; set; }
 
-        public Credito(int numero, DateTime vencimento) : base(numero)
+        public Credito(int numero_cartao, DateTime vencimento, int agencia, int numero, string banco) : base(numero_cartao, agencia, numero, banco)
         {
             Vencimento = vencimento;
             Limite = 1000;
