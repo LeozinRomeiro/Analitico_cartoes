@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Analitico.Pagamento_virtual
 {
-    internal class Cartao : Conta
+    internal abstract class Cartao : Conta
     {
         //public Conta Banco { get; set; } forma de agregar um dado de classe para outra
         public int Numero_cartao { get; private set; }//Forma simplificada de criar um get e set
@@ -16,10 +16,7 @@ namespace Analitico.Pagamento_virtual
         {
             Numero_cartao=numero;
         }
-
-        public virtual bool Agregar(double valor)//Virtual possibilita a sobreescreve-lo em uma herança
-        {
-            return false;
-        }
+        public abstract bool Agregar(double valor);//Virtual possibilita a sobreescreve-lo em uma herança
+        public abstract bool Reduzir(double valor);//Marca essa instanci/metodo como abstract obria a sobreescreva-la em filho
     }
 }

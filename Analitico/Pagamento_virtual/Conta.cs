@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Analitico.Pagamento_virtual
 {
-    internal class Conta
+    internal abstract class Conta//abstract indica que essa classe so é criada apartir de outras, ela so alimeta outras e dissuardi a crição invidual da mesma
     {
         public string Banco { get; set; }
         public int Agencia { get; set; }
@@ -31,5 +31,6 @@ namespace Analitico.Pagamento_virtual
             Agencia = agencia; Numero_conta = numero_conta; Banco = banco;//Obrigar o dev a informar os criterios qunando acionar o objeto
             Total++;
         }
+        
     }
 }

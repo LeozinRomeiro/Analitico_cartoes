@@ -15,6 +15,7 @@ namespace Analitico.Pagamento_virtual
         {
             Vencimento = vencimento;
             Limite = 1000;
+            Console.Write("diretor");
         }
 
 
@@ -60,7 +61,7 @@ namespace Analitico.Pagamento_virtual
             Limite += valor; return true;
         }
 
-        public bool Reduzir(double valor)
+        public override bool Reduzir(double valor)
         {
             if (valor < Limite)
                 return false;

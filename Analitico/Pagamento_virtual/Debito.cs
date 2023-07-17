@@ -20,7 +20,7 @@ namespace Analitico.Pagamento_virtual
             Saldo += valor; return true;
         }
 
-        public bool Reduzir(double valor)
+        public override bool Reduzir(double valor)
         {
             if (valor < 0)
                 return false;
