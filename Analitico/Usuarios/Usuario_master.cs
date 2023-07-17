@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Analitico.Usuarios
 {
-    internal class Usuario_master
+    class Usuario_master : Usuario_acesso
     {
+
     }
 }
