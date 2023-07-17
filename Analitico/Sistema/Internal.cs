@@ -10,11 +10,10 @@ namespace Analitico.Sistema
 {
     public class Internal
     {
-        
         public bool Logar(Usuario usuario, string senha)
         {
             
-
+            bool resposta = false;
             if (resposta)
             {
                 Console.WriteLine("Certo");
