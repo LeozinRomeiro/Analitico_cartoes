@@ -46,9 +46,9 @@ namespace Analitico.Pagamento_virtual
             this._limite = limite;
         }*/
 
-        public bool Creditar(double valor)
+        public bool Creditar(double valor)//Funcao para credirar os cartões
         {
-            if (Limite < valor)//Funcao para credirar os cartões
+            if (Limite < valor)
                 return false;
             Limite -= valor; return true;
         }

@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Analitico.Contas_pagar
 {
-    internal class Fixa
+    internal class Constante : Despesa
     {
+        public Constante(double valor, DateTime data_pagamento, string motivo) : base(valor, data_pagamento, motivo)
+        {
+
+        }
     }
 }

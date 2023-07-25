@@ -28,6 +28,14 @@ namespace Analitico.Pagamento_virtual
 
         public Conta(int agencia, int numero_conta, string banco)
         {
+            if (agencia <= 0)
+            {
+                throw new ArgumentException("Erro no " + nameof(agencia));
+            }
+            if (numero_conta <= 0)
+            {
+                throw new ArgumentException("Erro no " + nameof(numero_conta));
+            }
             Agencia = agencia; Numero_conta = numero_conta; Banco = banco;//Obrigar o dev a informar os criterios qunando acionar o objeto
             Total++;
         }
