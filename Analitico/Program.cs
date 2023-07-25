@@ -13,7 +13,7 @@ namespace Analitico
     {
         public static void Main(string[] args)
         {
-            Cadastrar();
+            Cadastrar();//Irelevante, os metodos nao tras algo criado dentro dele
 
             Console.ReadLine();
 

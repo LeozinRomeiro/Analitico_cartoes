@@ -10,14 +10,7 @@ namespace Analitico.Pagamento_virtual
     {
          //Indicando seu formato private para colocar condições no get e no set
         public DateTime Vencimento { get; set; }
-
-        public Credito(int numero_cartao, DateTime vencimento, int agencia, int numero, string banco) : base(numero_cartao, agencia, numero, banco)
-        {
-            Vencimento = vencimento;
-            Limite = 1000;
-        }
-
-
+        public double Fatura { get; }
         public double Limite
         {
             get
@@ -34,6 +27,11 @@ namespace Analitico.Pagamento_virtual
             }
         }
 
+        public Credito(int numero_cartao, DateTime vencimento, int agencia, int numero, string banco) : base(numero_cartao, agencia, numero, banco)
+        {
+            Vencimento = vencimento;
+            Limite = 1000;
+        }
         /*public double Captar_limite()
         {
             return _limite;//GET DA FORMA MAIS BRUTA
@@ -46,11 +44,18 @@ namespace Analitico.Pagamento_virtual
             this._limite = limite;
         }*/
 
-        public bool Creditar(double valor)//Funcao para credirar os cartões
+        //public bool Creditar(double valor)//Funcao para credirar os cartões
+        //{
+        //    if (Limite < valor)
+        //        return false;
+        //    Limite -= valor; return true; Retornar false ou true é algo futil como retornar 1 ou 2 ->
+        //}            ->  ate porque creditar seria uma funcao apenas para tirar o limite nao generalize um metodo
+
+        public void Creditar(double valor)//Funcao para credirar os cartões
         {
             if (Limite < valor)
-                return false;
-            Limite -= valor; return true;
+
+            Limite -= valor;
         }
 
         public override bool Agregar(double valor)//override indica que essa funcao sobreescreve outra de acordo com a herança
