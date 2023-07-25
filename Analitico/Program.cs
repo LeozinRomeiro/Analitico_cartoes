@@ -20,6 +20,15 @@ namespace Analitico
         }
         public static void Cadastrar()
         {
+            try
+            {
+                Debito conta_leonardo = new Debito(9395, 4545, 2407, "BB");
+            }
+            catch
+            {
+
+            }
+
             Usuario Leonardo = new Usuario();
 
             Leonardo.CPF = "143.526.119-48";

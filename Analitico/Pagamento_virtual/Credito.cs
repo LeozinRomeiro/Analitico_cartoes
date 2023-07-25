@@ -15,7 +15,6 @@ namespace Analitico.Pagamento_virtual
         {
             Vencimento = vencimento;
             Limite = 1000;
-            Console.Write("diretor");
         }
 
 

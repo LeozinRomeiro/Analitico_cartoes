@@ -8,7 +8,7 @@ namespace Analitico.Pagamento_virtual
 {
     internal class Debito : Cartao
     {
-        public Debito(int numero, int agencia, int numero_conta, string banco) : base(numero, agencia, numero_conta, banco)//Na declaração da classe base obriguei um campo que agora é nessario na heranca por essa codifição senelhanca a declaração de heranca
+        public Debito(int numero_cartao, int agencia, int numero_conta, string banco) : base(numero_cartao, agencia, numero_conta, banco)//Na declaração da classe base obriguei um campo que agora é nessario na heranca por essa codifição senelhanca a declaração de heranca
         {
         }
 

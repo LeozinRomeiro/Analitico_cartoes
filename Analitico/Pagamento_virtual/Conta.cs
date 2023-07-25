@@ -8,9 +8,9 @@ namespace Analitico.Pagamento_virtual
 {
     internal abstract class Conta//abstract indica que essa classe so é criada apartir de outras, ela so alimeta outras e dissuardi a crição invidual da mesma
     {
-        public string Banco { get; set; }
-        public int Agencia { get; set; }
-        public int Numero_conta { get; set; }
+        public string Banco { get; }
+        public int Agencia { get; }
+        public int Numero_conta { get; }
         public double Saldo
         {
             get
@@ -31,6 +31,6 @@ namespace Analitico.Pagamento_virtual
             Agencia = agencia; Numero_conta = numero_conta; Banco = banco;//Obrigar o dev a informar os criterios qunando acionar o objeto
             Total++;
         }
-        
+
     }
 }
