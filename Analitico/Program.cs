@@ -15,9 +15,6 @@ namespace Analitico
         {
             Cadastrar();//Irelevante, os metodos nao tras algo criado dentro dele
 
-            Usuario_acesso leo = new Usuario_acesso();
-            Usuario leoo = new Usuario_acesso();
-
             Console.ReadLine();
 
         }
@@ -32,10 +29,8 @@ namespace Analitico
 
             }
 
-            Usuario Leonardo = new Usuario();
+            Usuario_responsavel Leonardo = new Usuario_responsavel("143", "123");
 
-            Leonardo.CPF = "143.526.119-48";
-            Leonardo.Nome = "Leonardo Henrique";
 
             DateTime variavel = new DateTime(2011, 7, 10);
             Console.WriteLine("Today is " + variavel.ToString("MM/yy") + ".");

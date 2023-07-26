@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Analitico.Usuarios
 {
-    internal class Usuario_responsavel
+    internal class Usuario_responsavel : Usuario_acesso
     {
+        public Usuario_responsavel(string cpf, string senha) : base(cpf, senha) { }
     }
 }

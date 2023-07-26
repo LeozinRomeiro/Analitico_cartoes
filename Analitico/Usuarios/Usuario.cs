@@ -9,9 +9,13 @@ namespace Analitico.Usuarios
 {
     public abstract class Usuario
     {
-        public string Nome { get; set; }
-        public string CPF { get;}
+        public string Nome { get; }
+        public string CPF { get; }
         public int Numero_telefone { get; set; }
+        public Usuario(string cpf)
+        {
+            CPF = cpf;
+        }
 
         /*// 0 - Eu
         // 1 - Familia
