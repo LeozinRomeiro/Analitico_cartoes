@@ -9,7 +9,7 @@ namespace Analitico.Usuarios
 {
     abstract class Usuario_acesso : Usuario, Acesso//Criamos uma classe especifica para usuario que tem acesso para evitar repetição de codigo
     {
-            string Senha { get; set; }
+        string Senha { get;}
         public bool Validar(string senha)
         {
             return Senha == senha;

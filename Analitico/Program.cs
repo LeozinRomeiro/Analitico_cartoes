@@ -15,6 +15,9 @@ namespace Analitico
         {
             Cadastrar();//Irelevante, os metodos nao tras algo criado dentro dele
 
+            Usuario_acesso leo = new Usuario_acesso();
+            Usuario leoo = new Usuario_acesso();
+
             Console.ReadLine();
 
         }

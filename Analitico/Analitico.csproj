@@ -59,7 +59,9 @@
     <Compile Include="Sistema\Internal.cs" />
     <Compile Include="Usuarios\Usuario.cs" />
     <Compile Include="Usuarios\Usuario_acesso.cs" />
+    <Compile Include="Usuarios\Espectador.cs" />
     <Compile Include="Usuarios\Usuario_master.cs" />
+    <Compile Include="Usuarios\Usuario_responsavel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 
 namespace Analitico.Usuarios
 {
-    public class Usuario
+    public abstract class Usuario
     {
         public string Nome { get; set; }
-        public string CPF { get; set; }
+        public string CPF { get;}
+        public int Numero_telefone { get; set; }
 
         /*// 0 - Eu
         // 1 - Familia
