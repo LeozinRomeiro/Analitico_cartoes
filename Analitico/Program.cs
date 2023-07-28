@@ -16,7 +16,6 @@ namespace Analitico
             Cadastrar();//Irelevante, os metodos nao tras algo criado dentro dele
 
             Console.ReadLine();
-
         }
         public static void Cadastrar()
         {
