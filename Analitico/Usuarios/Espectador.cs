@@ -9,10 +9,11 @@ namespace Analitico.Usuarios
 {
     internal class Espectador : Acesso
     {
+        private Validar_helper _validar_helper;
         public string Senha { get; }
         bool Acesso.Validar(string senha)
         {
-            return Senha == senha;
+            return _validar_helper.Validar(Senha, senha);
         }
     }
 }
