@@ -1,2 +1,3 @@
 # Analitico_cartoes
-App para gerenciar e registra transferencia, como uma carteira virtual
+
+DLL para gerenciar e registrar transferencia, como uma carteira virtual. Ainda em construção...  
